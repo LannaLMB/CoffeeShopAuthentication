@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "UserReg";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserReg</h2>
+
+<h2 style="text-align:center;">User Registration Form</h2>
+<h5 style="text-align:center;">Please Fill Out the Form Below to Become a Member</h5><br />
+
+
+<form style="text-align:center; background-color: #ADD8E6; border: 1px;" action="/Home/AddUser" method="post"
+      oninput="x.value=parseInt(range.value)+parseInt(0)">
+
+    <label> First Name </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="text" placeholder="Enter First Name" name="Userfname" required /><br /><br />
+
+    <label> Last Name </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="text" placeholder="Enter Last Name" name="Userlname" required /><br /><br />
+
+    <label> E-Mail </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="email" placeholder="someone@something.com" name="Useremail" required /><br /><br />
+
+    <label> Phone Number </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="tel" placeholder="000-000-0000" name="pnumber" required /><br /><br />
+
+    <label> Password </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="password" placeholder="Enter Password" name="Userpword" required /><br /><br />
+
+    <label> Birthday </label><br />
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" type="date" name="Userbday" /><br /><br />
+
+    <label> Pick a Color </label><br />
+    <select style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" /><br /><br />
+    <option value="Green"> Green </option>
+    <option value="Blue"> Blue </option>
+    <option value="Orange"> Orange </option>
+    <option value="Yellow"> Yellow </option>
+    <option value="Pink"> Pink </option>
+    <option value="Red"> Red </option>
+    </select><br /><br />
+
+
+
+    <label>How Much Do You Love Coffee?</label><br />
+    <strong> YUCK - I Hate It! </strong> &nbsp; <input type="range" name="Amount" id="range" value="0" min="0" max="20" />
+    <output name="x" for="range"></output> &nbsp; <strong> That's Too Much Coffee - Said No One EVER! </strong><br /><br />
+
+    <input style="text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background-color: #4CAF50;
+        border: none; color: white;" type="submit" value="Register" /><br /><br />
+
+
+
+</form>
+
